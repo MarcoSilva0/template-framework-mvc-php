@@ -1,2 +1,2 @@
 TODO
-[] Arrumar a comment doc da classe Request e Response
+[X] Arrumar a comment doc da classe Request e Response
