@@ -9,14 +9,14 @@ class About extends Page
 {
 
     /**
-     * Método responsável por retornar o conteudo da home
+     * Método responsável por retornar o conteudo da about
      * @return String
      */
-    public static function getHome()
+    public static function getAbout()
     {
         $obOrganization = new Organization;
 
-        //View da home
+        //View da about
         $content = View::render('pages/about', [
             'name' => $obOrganization->name,
             'description' => $obOrganization->description

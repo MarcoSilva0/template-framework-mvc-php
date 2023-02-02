@@ -10,9 +10,16 @@ $obRouter->get('/', [
     }
 ]);
 
-//ROTA Sobre
+//ROTA SOBRE
 $obRouter->get('/sobre', [
     function () {
-        return new Response(200, Pages\About::getHome());
+        return new Response(200, Pages\About::getAbout());
+    }
+]);
+
+//ROTA DINÂMICA
+$obRouter->get('/pagina/{id}/{acao}', [
+    function ($id, $acao) {
+        return new Response(200, 'Página ' . $id . ' - ' . $acao);
     }
 ]);
